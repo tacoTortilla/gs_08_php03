@@ -1,7 +1,10 @@
 <?php
 include('functions.php');
 
+//debug
+// echo "<pre>";
 // var_dump($_POST);
+// echo "<pre>";
 // exit();
 
 // POSTデータ確認
