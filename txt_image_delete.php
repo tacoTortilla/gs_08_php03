@@ -5,7 +5,7 @@ $id = $_GET['id'];
 include('functions.php');
 $pdo = connect_to_db();
 
-$sql = 'DELETE FROM todo_table WHERE id=:id';
+$sql = 'DELETE FROM todo_table_kadai WHERE id=:id';
 
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_STR);
@@ -17,6 +17,6 @@ try {
   exit();
 }
 
-header("Location:todo_read.php");
+header("Location:txt_image_read.php");
 exit();
 
